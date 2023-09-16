@@ -4,18 +4,20 @@
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<title>Exequias</title>
-	    <link rel="icon" href="img/logo.jpeg"/> 
+		  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css" />
 
-	<link rel="stylesheet" href="css/index.css">
-	<link rel="stylesheet" href="css/swiper.css">
+		<link rel="icon" href="img/logo.jpeg"/> 
+		<link rel="stylesheet" href="css/index.css">
+		<link rel="stylesheet" href="css/swiper.css">
 
-	  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css" />
+	  <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1" />
+
 
 	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
 
 </head>
 <body>
-	<main class="portada" >
+	<main id="portada" class="portada" >
 		<div class="logo">
 			<img src="img/logo.jpeg" alt="">
 		</div>
@@ -56,17 +58,17 @@
 				
 			</ul>
 		</nav>
-		<img src="img/portada.jpg" height="100%" alt="">
+		<!--img  id="portada_imagen" src="img/portadahd.jpeg" alt=""-->
 	</main>
-	<section id="video1" class="seccion" id="home">
+	<section id="video1" class="seccion">
 		<iframe width="100%" height="100%" src="https://www.youtube.com/embed/n_ZgxqGdWvw" title="Exequia   &quot;Inmigrante&quot;" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
 	</section>
 	<section class="seccion text_seccion" >
 		<div class="separador"></div>
 
-		<div class="img_text">
+		<div id="text_Area" class="img_text">
 
-				<img src="img/text_img.jpg" alt="">
+				<img    src="img/text_img.jpg" alt="">
 			
 		</div>
 
@@ -117,13 +119,13 @@
 		</div>
 		
 		<div class="galery">
-			<div class="image i1 observer">
+			<div class="image ">
 				<img src="img/exequia1.jpg" alt="imagen_metal">
 			</div>
-			<div class="image i1 observer">
+			<div class="image ">
 				<img src="img/exequia2.jpg" alt="imagen_metal">
 			</div>
-			<div class="image i1 observer">
+			<div class="image ">
 				<img src="img/exequia3.jpg" alt="imagen_metal">
 			</div>
 		</div>
@@ -277,21 +279,23 @@
 <script src="javascript/index.js" ></script>
   <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
 
- <script>
+ 
+     <script>
     var swiper = new Swiper(".mySwiper", {
-      spaceBetween: 30,
+      effect: "coverflow",
+      grabCursor: true,
       centeredSlides: true,
-      autoplay: {
-        delay: 2500,
-        disableOnInteraction: false,
+      slidesPerView: "auto",
+      coverflowEffect: {
+        rotate: 50,
+        stretch: 0,
+        depth: 100,
+        modifier: 1,
+        slideShadows: true,
       },
       pagination: {
         el: ".swiper-pagination",
-        clickable: true,
-      },
-      navigation: {
-        nextEl: ".swiper-button-next",
-        prevEl: ".swiper-button-prev",
       },
     });
   </script>
+  
