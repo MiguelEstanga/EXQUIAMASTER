@@ -93,6 +93,17 @@ document.addEventListener("DOMContentLoaded"  , function(){
 		  // Hacer algo con la posición de la pantalla
 		  //console.log('La pantalla está hacia la', position);
 
-	}		
+	}	
+
+	const image = document.getElementById('portada');
+	const textArea = document.getElementById("text_Area")
+
+
+	textArea.addEventListener('click' , e=>{
+		textArea.classList.toggle("active")
+	})
+	image.addEventListener('click' , e=>{
+		image.classList.toggle("active")
+	})
 })
 

@@ -421,7 +421,7 @@ footer  .contac div .contactame{
 		transition: linear 2s;
 	}
 
-	.img_text:hover{
+	.img_text.active{
 		background-position: right;
 	}
 
@@ -430,5 +430,9 @@ footer  .contac div .contactame{
 	.portada{
 		background-position: left;
 		transition: all 1s;
+	}
+
+	.portada.active{
+		background-position: right;
 	}
 }
