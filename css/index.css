@@ -5,6 +5,19 @@
 	font-family: arial;
 	color: #fff;
 }
+.spotify_conten{
+	
+	width: 100vw;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.spotify{
+	width: 50%;
+	height: 80%;
+
+}
 #Email{
 	opacity: 0;
 }
@@ -418,7 +431,7 @@ footer  .contac div .contactame{
 		background-repeat: no-repeat;
 		background-position: left;
 		height: 50%;
-		transition: linear 2s;
+		 transition: background-position 0.5s ease-out;;
 	}
 
 	.img_text.active{
@@ -434,5 +447,11 @@ footer  .contac div .contactame{
 
 	.portada.active{
 		background-position: right;
+	}
+
+	.spotify{
+		width: 90%;
+		height: 100%;
+
 	}
 }
