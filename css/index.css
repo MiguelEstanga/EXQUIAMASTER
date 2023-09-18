@@ -24,7 +24,7 @@
 #portada_imagen{
 	width: 100%;
 	height: 60%;
-	
+	display: none;
 	
 }
 
@@ -191,7 +191,10 @@ nav ul li a{
 	
 }
 
-
+.kymatic{
+	height: 30vh;
+	width: 100vw;
+}
 .videosingle{
 	max-width: 500px;
 	height: 400px;
@@ -395,7 +398,7 @@ footer  .contac div .contactame{
 	margin-left: 10px;
 }
 
-@media  (max-width:800px){
+@media  (max-width:600px){
 	.videos_conten{
 		height: auto;
 		grid-template-columns: repeat(1, 1fr);
@@ -421,7 +424,7 @@ footer  .contac div .contactame{
 	#portada_imagen{
 	width: 100%;
 	height: 100%;
-	
+	display: block;
 	background-position: center;
 	
 	}
@@ -454,4 +457,22 @@ footer  .contac div .contactame{
 		height: 100%;
 
 	}
+	#video1{
+		height:225px;
+		width: 100%;
+		display: block;
+		margin-bottom: 20px;
+		justify-content: center;
+		align-items: center;
+	}
+	#video1 iframe{
+		height: 100%;
+		width: 100%;
+	}
+
+	.videosingle{
+		height: 225px;
+		box-shadow: 0 0 10px rgba(0, 0, 0, .6);
+	}
 }
+
