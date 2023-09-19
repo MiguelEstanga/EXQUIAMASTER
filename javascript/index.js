@@ -40,12 +40,24 @@ document.addEventListener("DOMContentLoaded"  , function(){
 		requestAnimationFrame(actulizarposicion)
 	}
 	
-	if ('ondeviceorientation' in window) {
-		actulizarposicion()
-		alert("sensor active")
-	}else{
-		alert('el dispositivo no tiene sensor de movimiento')
-	}
+
+
+	if ('DeviceMotionEvent' in window && typeof DeviceMotionEvent.requestPermission === 'function') {
+		  DeviceMotionEvent.requestPermission()
+		    .then(permissionState => {
+		      if (permissionState === 'granted') {
+		        alert("sensor encontrado mueva la pantalla de un lado a otro para cambiar de posición la imagen")
+		       	actulizarposicion()
+		      } else {
+		        // El usuario no otorgó permiso para acceder a los sensores de movimiento
+		        console.log('El usuario no otorgó permiso para acceder a los sensores de movimiento');
+		      }
+		    })
+		    .catch(console.error);
+		} else {
+		  // El dispositivo no tiene soporte para los sensores de movimiento
+		      	alert("hemos detectado que su dispositivo no tiene sensot de movimiento toque la imagen para moverla de un lado a otro")
+		}
 	
 
 	portada.addEventListener('click' , e=>{
