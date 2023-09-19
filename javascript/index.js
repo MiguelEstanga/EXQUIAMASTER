@@ -42,6 +42,7 @@ document.addEventListener("DOMContentLoaded"  , function(){
 	
 	if ('ondeviceorientation' in window) {
 		actulizarposicion()
+		alert("sensor active")
 	}else{
 		alert('el dispositivo no tiene sensor de movimiento')
 	}

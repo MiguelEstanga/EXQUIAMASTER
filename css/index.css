@@ -426,21 +426,9 @@ footer  .contac div .contactame{
 	
 	}
 
-	.img_text{
-		background-image: url('../img/text_img.jpg');
-		background-repeat: no-repeat;
-		background-position: left;
-		height: 50%;
-		 transition: background-position 0.5s ease-out;;
-	}
+	
 
-	.img_text.active{
-		background-position: right;
-	}
-
-	.img_text img{display: none;}
-
-	.portada.left{
+	.portada{
 		background-position: left;
 		transition: all 1s;
 	}
