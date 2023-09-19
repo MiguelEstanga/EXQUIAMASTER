@@ -41,11 +41,10 @@ document.addEventListener("DOMContentLoaded"  , function(){
 	}
 	
 	actulizarposicion()
-	textArea.addEventListener('click' , e=>{
-		textArea.classList.toggle("active")
-	})
-	image.addEventListener('click' , e=>{
+
+	portada.addEventListener('click' , e=>{
 		image.classList.toggle("active")
+		console.log(portada.classList)
 	})
 })
 

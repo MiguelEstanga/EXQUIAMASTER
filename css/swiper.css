@@ -17,3 +17,17 @@
       width: 100%;
       height: 100%;
     }
+
+    @media  (max-width: 400px){
+         .swiper-slide {
+            background-position: center;
+            background-size: cover;
+            width: 290px!important;
+            height: 290px!important;
+           
+          }
+
+          .swiper-slide img{
+            object-fit: cover;
+          }
+    }
