@@ -440,12 +440,12 @@ footer  .contac div .contactame{
 
 	.img_text img{display: none;}
 
-	.portada{
+	.portada.left{
 		background-position: left;
 		transition: all 1s;
 	}
 
-	.portada.active{
+	.portada.right{
 		background-position: right;
 	}
 

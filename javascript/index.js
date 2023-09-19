@@ -40,10 +40,15 @@ document.addEventListener("DOMContentLoaded"  , function(){
 		requestAnimationFrame(actulizarposicion)
 	}
 	
-	actulizarposicion()
+	if ('ondeviceorientation' in window) {
+		actulizarposicion()
+	}else{
+		alert('el dispositivo no tiene sensor de movimiento')
+	}
+	
 
 	portada.addEventListener('click' , e=>{
-		image.classList.toggle("active")
+		image.classList.toggle("right")
 		console.log(portada.classList)
 	})
 })
