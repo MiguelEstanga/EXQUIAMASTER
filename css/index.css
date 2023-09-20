@@ -442,6 +442,8 @@ footer  .contac div .contactame{
 	.portada{
 		background-position: left;
 		transition: all 1s;
+		height: 40vh;
+		width: 100vw;
 	}
 
 	.portada.right{
