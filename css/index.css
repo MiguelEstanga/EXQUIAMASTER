@@ -5,6 +5,18 @@
 	font-family: arial;
 	color: #fff;
 }
+.logo_empresa{
+	background-color: #fff;
+	height: 230px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.logo_empresa img{
+	width: 200px;
+	height: 200px;
+}
 .spotify_conten{
 	
 	width: 100vw;
@@ -286,7 +298,6 @@ nav ul li a{
 	align-items: center;
 	margin: auto;
 	transition: all 1s;
-	
 }
 
 
