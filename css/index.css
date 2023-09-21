@@ -188,6 +188,7 @@ nav ul li a{
 
 .text{
 	color: red;
+	text-align: center;
 	margin-left: 20px;
 	margin-right: 20px;
 }
@@ -409,6 +410,7 @@ footer  .contac div .contactame{
 }
 
 .contactame a{
+
 	text-decoration: none;
 	color: #fff;
 	margin-left: 10px;
