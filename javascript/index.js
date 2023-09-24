@@ -17,7 +17,7 @@ document.addEventListener("DOMContentLoaded"  , function(){
 		var email = form.get('email')
 		var contenido = form.get('contenido')
 
-		url =  `mailto:miguelestanga12@gmail.com?subject=${nombre}${email}&body=${contenido}`
+		url =  `mailto:ktcmusicbooking@gmail.com?subject=${nombre}${email}&body=${contenido}`
 		Email.setAttribute('href' , url)
 		Email.click()
 	} )

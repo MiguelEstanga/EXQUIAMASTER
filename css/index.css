@@ -291,8 +291,8 @@ nav ul li a{
 }
 
 .galery .image{
-	width: 250px;
-	height: 250px;
+	width: 290px;
+	height: 210px;
 	background-color:#17202A;
 	display: flex;
 	justify-content: center;
